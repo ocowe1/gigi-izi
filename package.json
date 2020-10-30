@@ -1,14 +1,24 @@
 {
   "name": "gigi-izi",
   "version": "1.0.0",
-  "description": "Bot discord para Lvl1 Media.",
+  "description": "Bot criado para a empresa Lvl1 Media.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon src/index.js --watch src/"
   },
   "author": "Vinicius Costa Santos",
   "license": "ISC",
   "dependencies": {
-    "discord.js": "^12.4.1"
+    "@discordjs/opus": "^0.3.3",
+    "discord.js": "^12.4.1",
+    "dotenv": "^8.2.0",
+    "ffmpeg": "0.0.4",
+    "fluent-ffmpeg": "^2.1.2",
+    "yt-search": "^2.3.3",
+    "ytdl-core-discord": "^1.2.4"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.6"
   }
 }
